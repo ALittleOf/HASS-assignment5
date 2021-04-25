@@ -4,7 +4,7 @@
 
 // set the dimensions and margins of the graph
 var width = 1300
-var height = 430
+var height = 539
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
@@ -39,6 +39,7 @@ d3.csv("./Untitled3.csv", function(data) {
     .style("border-width", "2px")
     .style("border-radius", "5px")
     .style("padding", "5px")
+    .style("position", "absolute")
 
   // Three function that change the tooltip when user hover / move / leave a cell
   var mouseover = function(d) {
